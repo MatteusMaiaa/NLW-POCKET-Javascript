@@ -8,11 +8,11 @@ Como um lego, voce irá utilizar peças para criar algoritmos, ou seja , para re
 ## Peças de uma linguagem
 
 - [x]Comentários 
-- Declação de variaveis (const, let)
-- Operadores (atribuição, concatenação, matematica, logicos )
-- Tipos de dados (string , number, boolean)
-- Estrutura de dados (function, object, array)
-- Estrutura de repetição (for, while)
+- [x]Declação de variaveis (const, let)
+- [x]Operadores (atribuição, concatenação, matematica, logicos )
+- [x]Tipos de dados (string , number, boolean)
+- [x]Estrutura de dados (function, object, array)
+- [x]Estrutura de repetição (for, while)
 
 # Fases da resolução de um problema
 
@@ -53,3 +53,11 @@ Apresentar os dados
 - [x] criar , passar argumento
 - [x] executar
 - [x] arrow function / named function
+
+# Estrutua de repetição
+
+-[x] while
+
+# Condicionais
+
+-[x] Switch
