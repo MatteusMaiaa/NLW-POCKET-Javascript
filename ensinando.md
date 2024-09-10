@@ -7,12 +7,12 @@ Como um lego, voce irá utilizar peças para criar algoritmos, ou seja , para re
 
 ## Peças de uma linguagem
 
-- [x]Comentários 
-- [x]Declação de variaveis (const, let)
-- [x]Operadores (atribuição, concatenação, matematica, logicos )
-- [x]Tipos de dados (string , number, boolean)
-- [x]Estrutura de dados (function, object, array)
-- [x]Estrutura de repetição (for, while)
+- Comentários 
+- Declação de variaveis (const, let)
+- Operadores (atribuição, concatenação, matematica, logicos )
+- Tipos de dados (string , number, boolean)
+- Estrutura de dados (function, object, array)
+- Estrutura de repetição (for, while)
 
 # Fases da resolução de um problema
 
@@ -35,6 +35,7 @@ Apresentar os dados
 
 - [x]Operadores de atribuição de valor
 - [x]Operador de contatenação
+- [x]Operadores de comparação: == !=  <= >= < >
 
 ## Estrutua de dados:
 
@@ -61,6 +62,7 @@ Apresentar os dados
 # Condicionais
 
 -[x] Switch
+-[x] If and Else
 
 ## Modulos em Node.js
 
