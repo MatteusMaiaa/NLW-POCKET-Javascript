@@ -30,7 +30,7 @@ const listarMetas = async () => {
 
     if(respostas.length == 0) {
         console.log("nenhuma meta selecionada!")
-        return listarMetas() 
+        return 
     }
 
     metas.forEach((m) => {
@@ -38,14 +38,30 @@ const listarMetas = async () => {
     })
 
     respostas.forEach((resposta) => {
-        const meta = metas.find((m) => {
-            return m.value == resposta
+        const meta = metas.find((m) => {  //ele vai procurar a primeira meta de metas , se for diferente ele vai para a segunda meta e assim por diante
+            return m.value == resposta    // se a meta m.value for igual o checked eh valido.
         })
         
         meta.checked = true
     })
 
    console.log('Metas Marcadas como concluidas')
+}
+
+const metasRealizadas = async () => {
+    const realizadas = metas.filter((meta) => {
+        return meta.checked
+    })
+    if(realizadas.length == 0){
+        console.log("não existe metas realizadas! :( ")
+        return
+    }
+
+    await select({
+        message: "Metas realizadas",
+        choices: [...realizadas]
+    })
+
 }
 
 const start =  async () => {
@@ -62,6 +78,10 @@ const start =  async () => {
                 {
                     name: "Listar metas",
                     value: "listar"
+                },
+                {
+                    name: "Metas realizadas",
+                    value: "realizadas"
                 },
                 {
                     name: "Sair",
@@ -81,6 +101,9 @@ const start =  async () => {
                 break
             case "listar":
                 await listarMetas()
+                break
+            case "realizadas":
+                await metasRealizadas()    
                 break
             case "sair":
                 console.log("Ate a proxima !")
